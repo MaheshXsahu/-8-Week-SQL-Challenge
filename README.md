@@ -1,4 +1,4 @@
-# -8-Week-SQL-Challenge
+# 8-Week-SQL-Challenge
 The 8 Week SQL Challenge, which consists of 8 different case studies, was created by Danny Ma and the Data With Danny virtual data apprenticeship program. Each case study contains a dataset with a series of questions to practice your SQL skills.
 
 ### 💻 Visit Dannys website to find out all about the challenge, as well as different resources:
