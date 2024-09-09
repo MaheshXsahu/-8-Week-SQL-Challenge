@@ -119,38 +119,8 @@ GROUP BY product.product_name;
 ```
 
 **Answer:**
-"product_name"	"total_generated_revenue"
-"White Tee Shirt - Mens"	192736000
-"Navy Solid Socks - Mens"	174871872
-"Grey Fashion Jacket - Womens"	266862600
-"Navy Oversized Jeans - Womens"	63863072
-"Pink Fluro Polkadot Socks - Mens"	137537140
-"Khaki Suit Jacket - Womens"	107611112
-"Black Straight Jeans - Womens"	150955392
-"White Striped Socks - Mens"	77233805
-"Blue Polo Shirt - Mens"	276022044
-"Indigo Rain Jacket - Womens"	89228750
-"Cream Relaxed Jeans - Womens"	46078010
-"Teal Button Up Shirt - Mens"	45283320
 
-|product_name|total_revenue|
-|:----|:----|
-|White Tee Shirt - Mens|192736000|
-|Navy Solid Socks - Mens|174871872|
-|Grey Fashion Jacket - Womens|266862600|
-|Navy Oversized Jeans - Womens|63863072|
-|Pink Fluro Polkadot Socks - Mens|137537140|
-|Khaki Suit Jacket - Womens|107611112|
-|Black Straight Jeans - Womens|150955392|
-|White Striped Socks - Mens|77233805|
-|Blue Polo Shirt - Mens|276022044|
-|Indigo Rain Jacket - Womens|89228750|
-|Cream Relaxed Jeans - Womens|46078010|
-|Teal Button Up Shirt - Mens|45283320|
-
-
-![image](https://github.com/user-attachments/assets/c90b92d9-342c-4326-bd29-2cb96a26070b)
-
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/c90b92d9-342c-4326-bd29-2cb96a26070b">
 
 ***
 
