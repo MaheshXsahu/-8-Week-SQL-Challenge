@@ -39,7 +39,6 @@ Danny, the CEO of this trendy fashion company has asked you to assist the teamâ€
 ![image](https://github.com/user-attachments/assets/23b96df0-2efe-4020-b7a8-e5c833722cd1)
 
 
-
 **Table 3: `product_hierarchy`**
 
 |id|parent_id|level_text|level_name|
