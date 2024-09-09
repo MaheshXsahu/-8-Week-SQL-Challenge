@@ -101,23 +101,8 @@ GROUP BY product.product_name;
 ```
 
 **Answer:**
-![image](https://github.com/user-attachments/assets/8cbda0bf-12c3-48bd-a1c2-b86ccc74f040)
 
-
-|product_name|total_quantity|
-|:----|:----|
-|White Tee Shirt - Mens|3800|
-|Navy Solid Socks - Mens|3792|
-|Grey Fashion Jacket - Womens|3876|
-|Navy Oversized Jeans - Womens|3856|
-|Pink Fluro Polkadot Socks - Mens|3770|
-|Khaki Suit Jacket - Womens|3752|
-|Black Straight Jeans - Womens|3786|
-|White Striped Socks - Mens|3655|
-|Blue Polo Shirt - Mens|3819|
-|Indigo Rain Jacket - Womens|3757|
-|Cream Relaxed Jeans - Womens|3707|
-|Teal Button Up Shirt - Mens|3646|
+<img width="932" alt="image" src="https://github.com/user-attachments/assets/8cbda0bf-12c3-48bd-a1c2-b86ccc74f040">
 
 ***
 
