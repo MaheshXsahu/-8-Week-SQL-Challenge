@@ -178,21 +178,20 @@ FROM revenue_cte;
 **4. What is the average discount value per transaction?**
 
 ```sql
-SELECT ROUND(AVG(discount_amt)) AS avg_discount
+SELECT ROUND(SUM(discount_amt)/COUNT(txn_id),2) AS avg_discount ---- AVG(discount_amt) 
 FROM (
   SELECT 
-	  txn_id,
-    SUM(qty * price * discount/100) AS discount_amt
-  FROM balanced_tree.sales
+	txn_id,
+    SUM(qty * price * discount*0.01) AS discount_amt
+  FROM sales
   GROUP BY txn_id
 ) AS discounted_value
+;
 ```
 
 **Answer:**
 
-|avg_discount|
-|:----|
-|60|
+![image](https://github.com/user-attachments/assets/aba37f42-0f08-4422-a94a-4b47eb46755f)
 
 **5. What is the percentage split of all transactions for members vs non-members?**
 
