@@ -145,7 +145,7 @@ GROUP BY product.product_name;
 
 **Answer:**
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/a3644f0f-f458-4e46-b08c-7b260d77eb1d">
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/6022de15-3ef3-4ebb-a67e-1be6b30d94f6">
 
 ***
 
