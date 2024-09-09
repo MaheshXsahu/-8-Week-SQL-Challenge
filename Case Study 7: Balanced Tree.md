@@ -102,7 +102,7 @@ GROUP BY product.product_name;
 
 **Answer:**
 
-<img width="932" alt="image" src="https://github.com/user-attachments/assets/8cbda0bf-12c3-48bd-a1c2-b86ccc74f040">
+<img width="720" alt="image" src="https://github.com/user-attachments/assets/8cbda0bf-12c3-48bd-a1c2-b86ccc74f040">
 
 ***
 
