@@ -101,6 +101,8 @@ GROUP BY product.product_name;
 ```
 
 **Answer:**
+![image](https://github.com/user-attachments/assets/8cbda0bf-12c3-48bd-a1c2-b86ccc74f040)
+
 
 |product_name|total_quantity|
 |:----|:----|
