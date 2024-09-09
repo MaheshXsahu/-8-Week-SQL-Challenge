@@ -23,8 +23,9 @@ Balanced Tree Clothing Company prides themselves on providing an optimised range
 Danny, the CEO of this trendy fashion company has asked you to assist the team’s merchandising teams **analyse their sales performance and generate a basic financial report** to share with the wider business.
 
 ## Entity Relationship Diagram
+![balanced_tree pgerd](https://github.com/user-attachments/assets/44a7590a-321d-456c-b3a8-0affb451cce3)
 
-<img width="932" alt="image" src="https://github.com/katiehuangx/8-Week-SQL-Challenge/assets/81607668/2ce4df84-2b05-4fe9-a50c-47c903b392d5">
+<img width="932" alt="image" src="https://github.com/user-attachments/assets/44a7590a-321d-456c-b3a8-0affb451cce3">
 
 **Table 1: `product_details`**
 
