@@ -155,14 +155,13 @@ GROUP BY product.product_name;
 
 ```sql
 SELECT COUNT(DISTINCT txn_id) AS transaction_count
-FROM balanced_tree.sales;
+FROM sales;
 ```
 
 **Answer:**
 
-|transaction_count|
-|:----|
-|2500|
+![image](https://github.com/user-attachments/assets/3480e418-33aa-4d95-95b7-ae7fabdc1730)
+
 
 ***
 
