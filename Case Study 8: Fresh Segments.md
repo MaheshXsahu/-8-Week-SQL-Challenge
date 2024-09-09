@@ -1,6 +1,5 @@
 # Case Study #8: Fresh Segments
 
-<img src="https://user-images.githubusercontent.com/81607668/138843936-d1741a39-9b87-4d5d-b09c-643600e28c92.png" alt="Image" width="500" height="520">
 
 ## 📚 Table of Contents
 - [Business Task](#business-task)
