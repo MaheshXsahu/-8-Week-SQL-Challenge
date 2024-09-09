@@ -114,9 +114,10 @@ GROUP BY product.product_name;
 **2. What is the total generated revenue for all products before discounts?**
 
 ```sql
+
 SELECT 
   product.product_name, 
-  SUM(sales.qty) * SUM(sales.price) AS total_revenue
+   SUM(sales.qty)* SUM(sales.price) AS total_generated_revenue
 FROM balanced_tree.sales
 INNER JOIN balanced_tree.product_details AS product
 	ON sales.prod_id = product.product_id
