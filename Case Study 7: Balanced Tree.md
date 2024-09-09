@@ -146,6 +146,7 @@ GROUP BY product.product_name;
 **Answer:**
 
 |product_name|total_discount|
+|:----|:----|
 "White Tee Shirt - Mens" |	17968
 "Navy Solid Socks - Mens" |	16059
 "Grey Fashion Jacket - Womens" |	24781
