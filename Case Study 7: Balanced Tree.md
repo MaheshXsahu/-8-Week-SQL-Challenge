@@ -86,10 +86,6 @@ Danny, the CEO of this trendy fashion company has asked you to assist the teamâ€
 
 ## Question and Solution
 
-Please join me in executing the queries using PostgreSQL on [DB Fiddle](https://www.db-fiddle.com/f/dkhULDEjGib3K58MvDjYJr/8). It would be great to work together on the questions!
-
-If you have any questions, reach out to me on [LinkedIn](https://www.linkedin.com/in/katiehuangx/).
-
 ## ðŸ“ˆ A. High Level Sales Analysis
 
 **1. What was the total quantity sold for all products?**
