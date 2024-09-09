@@ -1,18 +1,8 @@
 ## 🌲 Case Study #7: Balanced Tree
-product_name	total_generated_revenue
-White Tee Shirt - Mens	192736000
-Navy Solid Socks - Mens	174871872
-Grey Fashion Jacket - Womens	266862600
-Navy Oversized Jeans - Womens	63863072
-Pink Fluro Polkadot Socks - Mens	137537140
-Khaki Suit Jacket - Womens	107611112
-Black Straight Jeans - Womens	150955392
-White Striped Socks - Mens	77233805
-Blue Polo Shirt - Mens	276022044
-Indigo Rain Jacket - Womens	89228750
-Cream Relaxed Jeans - Womens	46078010
-Teal Button Up Shirt - Mens	45283320
-![image](https://github.com/user-attachments/assets/23c14e0a-2b3f-4c94-a671-0a2889b048fd)
+
+	
+![image](https://github.com/user-attachments/assets/e49b87b6-5ae8-44cd-a05a-aee78af1abda)
+
 
 
 <img src="https://github.com/katiehuangx/8-Week-SQL-Challenge/assets/81607668/8ada3c0c-e90a-47a7-9a5c-8ffd6ee3eef8" alt="Image" width="500" height="520">
