@@ -24,8 +24,9 @@ Danny, the CEO of this trendy fashion company has asked you to assist the teamâ€
 
 ## Entity Relationship Diagram
 
+![image](https://github.com/user-attachments/assets/b29e6c09-8919-42c5-a92c-ac9935bd53c2)
 
-<img width="932" alt="image" src="https://github.com/user-attachments/assets/44a7590a-321d-456c-b3a8-0affb451cce3">
+
 
 **Table 1: `product_details`**
 
