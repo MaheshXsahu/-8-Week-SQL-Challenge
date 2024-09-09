@@ -168,6 +168,8 @@ FROM revenue_cte;
 ```
 
 **Answer:**
+
+
 ![image](https://github.com/user-attachments/assets/fdacf872-1561-4bdd-bee2-fa9809550d51)
 
 
