@@ -136,6 +136,10 @@ GROUP BY product.product_name;
 |Cream Relaxed Jeans - Womens|46078010|
 |Teal Button Up Shirt - Mens|45283320|
 
+
+![image](https://github.com/user-attachments/assets/c90b92d9-342c-4326-bd29-2cb96a26070b)
+
+
 ***
 
 **3. What was the total discount amount for all products?**
