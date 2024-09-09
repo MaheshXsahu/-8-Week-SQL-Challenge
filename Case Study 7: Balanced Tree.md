@@ -119,6 +119,7 @@ GROUP BY product.product_name;
 ```
 
 **Answer:**
+![image](https://github.com/user-attachments/assets/93d3249b-4081-4470-a333-5e98d1ef7399)
 
 |product_name|total_revenue|
 |:----|:----|
