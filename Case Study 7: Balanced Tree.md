@@ -151,26 +151,25 @@ FROM (
 **3. What are the 25th, 50th and 75th percentile values for the revenue per transaction?**
 
 ```sql
+
 WITH revenue_cte AS (
   SELECT 
     txn_id, 
-    SUM(price * qty) AS revenue
+	SUM(price * qty*(1-discount*0.01)) AS revenue
   FROM balanced_tree.sales
   GROUP BY txn_id
 )
 
 SELECT
   PERCENTILE_CONT(0.25) WITHIN GROUP (ORDER BY revenue) AS median_25th,
-    PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY revenue) AS median_50th,
-PERCENTILE_CONT(0.75) WITHIN GROUP (ORDER BY revenue) AS median_75th
+  PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY revenue) AS median_50th,
+  PERCENTILE_CONT(0.75) WITHIN GROUP (ORDER BY revenue) AS median_75th
 FROM revenue_cte;
 ```
 
 **Answer:**
+![image](https://github.com/user-attachments/assets/fdacf872-1561-4bdd-bee2-fa9809550d51)
 
-|median_25th|median_50th|median_75th|
-|:----|:----|:----|
-|375.75|509.5|647|
 
 ***
 
