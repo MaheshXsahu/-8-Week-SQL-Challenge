@@ -36,7 +36,8 @@ Danny, the CEO of this trendy fashion company has asked you to assist the teamâ€
 
 **Table 2: `sales`**
 
-![image](https://github.com/user-attachments/assets/4c86a23b-a967-4420-874b-266842c306cf)
+![image](https://github.com/user-attachments/assets/23b96df0-2efe-4020-b7a8-e5c833722cd1)
+
 
 
 **Table 3: `product_hierarchy`**
