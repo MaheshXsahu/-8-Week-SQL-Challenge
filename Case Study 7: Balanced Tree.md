@@ -145,7 +145,19 @@ GROUP BY product.product_name;
 
 **Answer:**
 
-![image](https://github.com/user-attachments/assets/cbbc9152-48f3-4202-bc8e-ef1a8290a6ed)
+|product_name|total_discount|
+"White Tee Shirt - Mens" |	17968
+"Navy Solid Socks - Mens" |	16059
+"Grey Fashion Jacket - Womens" |	24781
+"Navy Oversized Jeans - Womens"|	5538
+"Pink Fluro Polkadot Socks - Mens"|	12344
+"Khaki Suit Jacket - Womens" |	9660
+"Black Straight Jeans - Womens"	| 14156
+"White Striped Socks - Mens"	| 6877
+"Blue Polo Shirt - Mens"	|26189
+"Indigo Rain Jacket - Womens"	|8010
+"Cream Relaxed Jeans - Womens"|	3979
+"Teal Button Up Shirt - Mens"	|3925
 
 
 ***
