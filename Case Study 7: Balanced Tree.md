@@ -119,7 +119,19 @@ GROUP BY product.product_name;
 ```
 
 **Answer:**
-![image](https://github.com/user-attachments/assets/93d3249b-4081-4470-a333-5e98d1ef7399)
+"product_name"	"total_generated_revenue"
+"White Tee Shirt - Mens"	192736000
+"Navy Solid Socks - Mens"	174871872
+"Grey Fashion Jacket - Womens"	266862600
+"Navy Oversized Jeans - Womens"	63863072
+"Pink Fluro Polkadot Socks - Mens"	137537140
+"Khaki Suit Jacket - Womens"	107611112
+"Black Straight Jeans - Womens"	150955392
+"White Striped Socks - Mens"	77233805
+"Blue Polo Shirt - Mens"	276022044
+"Indigo Rain Jacket - Womens"	89228750
+"Cream Relaxed Jeans - Womens"	46078010
+"Teal Button Up Shirt - Mens"	45283320
 
 |product_name|total_revenue|
 |:----|:----|
