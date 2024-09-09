@@ -1,7 +1,7 @@
 ## 🌲 Case Study #7: Balanced Tree
 
 	
-![image](https://github.com/user-attachments/assets/e49b87b6-5ae8-44cd-a05a-aee78af1abda)
+
 
 
 
