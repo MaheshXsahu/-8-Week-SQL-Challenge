@@ -168,21 +168,20 @@ FROM sales;
 **2. What is the average unique products purchased in each transaction?**
 
 ```sql
-SELECT ROUND(AVG(total_quantity)) AS avg_unique_products
+SELECT ROUND(SUM(unique_product_ordered)/COUNT(txn_id)) AS avg_unique_products
 FROM (
   SELECT 
     txn_id, 
-    SUM(qty) AS total_quantity
-  FROM balanced_tree.sales
+    COUNT(DISTINCT prod_id) AS unique_product_ordered
+  FROM sales
   GROUP BY txn_id
-) AS total_quantities;
+) AS total_unique_products ;
 ```
 
 **Answer:**
 
-|avg_unique_products|
-|:----|
-|18|
+![image](https://github.com/user-attachments/assets/d1c59d53-547b-4c9a-a6dc-4da5be1a65b8)
+
 
 ***
 
