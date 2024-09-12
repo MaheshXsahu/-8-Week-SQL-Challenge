@@ -115,8 +115,7 @@ SELECT
 FROM fresh_segments.interest_metrics
 ```
 
-<kbd><img width="120" alt="image" src="![image](https://github.com/user-attachments/assets/e9e4956e-c49e-40a9-9744-702b26e2da30)
-"></kbd>
+<kbd><img width="120" alt="image" src="https://github.com/user-attachments/assets/e9e4956e-c49e-40a9-9744-702b26e2da30"></kbd>
 
 Confirmed that there are no `null` values in `fresh_segments.interest_metrics`.
 
