@@ -159,32 +159,17 @@ WHERE id NOT IN (SELECT interest_id FROM interest_metrics);
   
 **5. Summarise the id values in the `fresh_segments.interest_map` by its total record count in this table.**
 
-I found the solution for this question to be strange - hence I came up with another summary of the id values too.
-
-Original solution:
-
-```sql 
-SELECT COUNT(*)
-FROM fresh_segments.interest_map
-```
-
-<kbd><img width="97" alt="image" src="https://user-images.githubusercontent.com/81607668/138911356-34884a1e-2c84-4769-b3cc-7916776a044c.png"></kbd>
-
-My solution:
-
 ```sql
-SELECT 
-  id, 
-  interest_name, 
-  COUNT(*)
-FROM fresh_segments.interest_map map
-JOIN fresh_segments.interest_metrics metrics
-  ON map.id = metrics.interest_id
-GROUP BY id, interest_name
-ORDER BY count DESC, id;
+SELECT
+  m.id,
+  m.interest_name,
+  COUNT(*) AS total_associations
+FROM interest_map AS m
+INNER JOIN interest_metrics AS me ON m.id = me.interest_id
+GROUP BY m.id, m.interest_name
+ORDER BY total_associations DESC;
 ```
 
-<kbd><img width="589" alt="image" src="https://user-images.githubusercontent.com/81607668/138911619-24d6e402-d4f0-48cb-8fa6-9ebecb035e90.png"></kbd>
 |id|interest_name|total_associations|
 |------|------------------------------|----|
 19630|Toyota Vehicle Shopper|14|
