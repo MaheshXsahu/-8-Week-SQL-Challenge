@@ -85,8 +85,6 @@ FROM fresh_segments.interest_metrics
 GROUP BY month_year
 ORDER BY month_year NULLS FIRST;
 ```
-![image](https://github.com/user-attachments/assets/5f5c5a14-a3b6-4cba-9711-2901da22a7d9)
-
 <kbd><img width="291" alt="image" src="https://github.com/user-attachments/assets/5f5c5a14-a3b6-4cba-9711-2901da22a7d9"></kbd>
 
 **3. What do you think we should do with these `null` values in the `fresh_segments.interest_metrics`?**
