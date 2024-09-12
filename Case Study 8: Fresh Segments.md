@@ -188,7 +188,7 @@ SELECT
   index_value,
   ranking,
   percentile_ranking,
-  CONCAT(_year, '-', _month) AS month_year, -- Combine year and month for clarity
+  month_year
   interest_name,
   interest_summary,
   created_at,
