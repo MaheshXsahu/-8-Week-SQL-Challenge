@@ -122,17 +122,16 @@ Confirmed that there are no `null` values in `fresh_segments.interest_metrics`.
 ***
   
 **4. How many `interest_id` values exist in the `fresh_segments.interest_metrics` table but not in the `fresh_segments.interest_map` table? What about the other way around?**.
+
 Before we perform the actual Query for the solution we need to convert the interest_id to INTEGER DATA TYPE:
 
 ```sql
 ALTER TABLE interest_metrics
 ALTER COLUMN interest_id TYPE INTEGER
 USING CAST(interest_id AS INTEGER);
-```sql
 
-The Final Query :
+-- The Final Query :
 
-```sql
 SELECT 
   COUNT(DISTINCT map.id) AS map_id_count,
   COUNT(DISTINCT metrics.interest_id) AS metrics_id_count,
