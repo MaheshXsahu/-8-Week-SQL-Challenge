@@ -140,15 +140,21 @@ SELECT
 FROM fresh_segments.interest_map map
 FULL OUTER JOIN fresh_segments.interest_metrics metrics
   ON metrics.interest_id = map.id;
-```
+```sql
 
-<kbd><img width="617" alt="image" src="![image](https://github.com/user-attachments/assets/25311075-b607-4b77-975c-fd4311194f3c)"></kbd>
+<kbd><img width="617" alt="image" src="https://github.com/user-attachments/assets/25311075-b607-4b77-975c-fd4311194f3c"></kbd>
 
 - There are 1,209 unique `id`s in `interest_map`.
 - There are 1,202 unique `interest_id`s in `interest_metrics`.
 - There are no `interest_id` that did not appear in `interest_map`. All 1,202 ids were present in the `interest_metrics` table.
-- There are 7 `id`s that did not appear in `interest_metrics`. 
+- There are 7 `id`s that did not appear in `interest_metrics`.
+```sql
+SELECT id AS Ids_not_in_metrics
+FROM interest_map
+WHERE id NOT IN (SELECT interest_id FROM interest_metrics);
+```sql
 
+<kbd><img width="120" alt="image" src="https://github.com/user-attachments/assets/d75793b6-c1e2-4055-9501-24a9092ced05"></kbd>
 ***
   
 **5. Summarise the id values in the `fresh_segments.interest_map` by its total record count in this table.**
