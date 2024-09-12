@@ -129,9 +129,10 @@ Before we perform the actual Query for the solution we need to convert the inter
 ALTER TABLE interest_metrics
 ALTER COLUMN interest_id TYPE INTEGER
 USING CAST(interest_id AS INTEGER);
+```
+ The Final Query :
 
--- The Final Query :
-
+```sql
 SELECT 
   COUNT(DISTINCT map.id) AS map_id_count,
   COUNT(DISTINCT metrics.interest_id) AS metrics_id_count,
@@ -140,7 +141,7 @@ SELECT
 FROM fresh_segments.interest_map map
 FULL OUTER JOIN fresh_segments.interest_metrics metrics
   ON metrics.interest_id = map.id;
-```sql
+```
 
 <kbd><img width="617" alt="image" src="https://github.com/user-attachments/assets/25311075-b607-4b77-975c-fd4311194f3c"></kbd>
 
@@ -152,8 +153,7 @@ FULL OUTER JOIN fresh_segments.interest_metrics metrics
 SELECT id AS Ids_not_in_metrics
 FROM interest_map
 WHERE id NOT IN (SELECT interest_id FROM interest_metrics);
-```sql
-
+```
 <kbd><img width="120" alt="image" src="https://github.com/user-attachments/assets/d75793b6-c1e2-4055-9501-24a9092ced05"></kbd>
 ***
   
