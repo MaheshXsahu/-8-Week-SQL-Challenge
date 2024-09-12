@@ -180,12 +180,22 @@ Screen Shot :
 We should be using `INNER JOIN` to perform our analysis.
 
 ```sql
-SELECT *
-FROM fresh_segments.interest_map map
-INNER JOIN fresh_segments.interest_metrics metrics
-  ON map.id = metrics.interest_id
-WHERE metrics.interest_id = 21246   
-  AND metrics._month IS NOT NULL; -- There were instances when interest_id is available, however the date values were not - hence filter them out.
+SELECT
+  _month AS month,
+  _year AS year,
+  interest_id,
+  composition,
+  index_value,
+  ranking,
+  percentile_ranking,
+  CONCAT(_year, '-', _month) AS month_year, -- Combine year and month for clarity
+  interest_name,
+  interest_summary,
+  created_at,
+  last_modified
+FROM interest_metrics me
+INNER JOIN interest_map m ON me.interest_id = m.id
+WHERE interest_id = 21246
 ```
 
 ![image](https://github.com/user-attachments/assets/d0cc2dea-7326-42bb-af44-0b284b03c089)
