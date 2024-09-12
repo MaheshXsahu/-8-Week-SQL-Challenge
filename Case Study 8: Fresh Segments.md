@@ -1391,7 +1391,20 @@ WHERE metrics.interest_id = 21246
   AND metrics._month IS NOT NULL; -- There were instances when interest_id is available, however the date values were not - hence filter them out.
 ```
 
-<kbd><img width="979" alt="image" src="https://user-images.githubusercontent.com/81607668/139016366-b6031eb7-3db9-4e1e-89a9-66136522fd4e.png"></kbd>
+_month|_year|interest_id|composition|index_value|ranking|percentile_ranking|month_year|interest_name|interest_summary|created_at|last_modified|
+|-----------------------------------------------------------------------------------------------------------------------------------------------|
+7.0|2018.0|21246|2.26|0.65|722|0.96|01-07-2018|Readers of El Salvadoran Content|People reading news from El Salvadoran media sources.|11-06-2018 17:50|11-06-2018 17:50|
+8.0|2018.0|21246|2.13|0.59|765|0.26|01-08-2018|Readers of El Salvadoran Content|People reading news from El Salvadoran media sources.|11-06-2018 17:50|11-06-2018 17:50|
+9.0|2018.0|21246|2.06|0.61|774|0.77|01-09-2018|Readers of El Salvadoran Content|People reading news from El Salvadoran media sources.|11-06-2018 17:50|11-06-2018 17:50|
+10.0|2018.0|21246|1.74|0.58|855|0.23|01-10-2018|Readers of El Salvadoran Content|People reading news from El Salvadoran media sources.|11-06-2018 17:50|11-06-2018 17:50|
+11.0|2018.0|21246|2.25|0.78|908|2.16|01-11-2018|Readers of El Salvadoran Content|People reading news from El Salvadoran media sources.|11-06-2018 17:50|11-06-2018 17:50|
+12.0|2018.0|21246|1.97|0.7|983|1.21|01-12-2018|Readers of El Salvadoran Content|People reading news from El Salvadoran media sources.|11-06-2018 17:50|11-06-2018 17:50|
+1.0|2019.0|21246|2.05|0.76|954|1.95|01-01-2019|Readers of El Salvadoran Content|People reading news from El Salvadoran media sources.|11-06-2018 17:50|11-06-2018 17:50|
+2.0|2019.0|21246|1.84|0.68|1109|1.07|01-02-2019|Readers of El Salvadoran Content|People reading news from El Salvadoran media sources.|11-06-2018 17:50|11-06-2018 17:50|
+3.0|2019.0|21246|1.75|0.67|1123|1.14|01-03-2019|Readers of El Salvadoran Content|People reading news from El Salvadoran media sources.|11-06-2018 17:50|11-06-2018 17:50|
+4.0|2019.0|21246|1.58|0.63|1092|0.64|01-04-2019|Readers of El Salvadoran Content|People reading news from El Salvadoran media sources.|11-06-2018 17:50|11-06-2018 17:50|
+nan|nan|21246|1.61|0.68|1191|0.25|nan|Readers of El Salvadoran Content|People reading news from El Salvadoran media sources.|11-06-2018 17:50|11-06-2018 17:50|
+
 
 The results should come up to 10 rows only. 
 
