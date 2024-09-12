@@ -1392,7 +1392,7 @@ WHERE metrics.interest_id = 21246
 ```
 
 _month|_year|interest_id|composition|index_value|ranking|percentile_ranking|month_year|interest_name|interest_summary|created_at|last_modified|
-|-----------------------------------------------------------------------------------------------------------------------------------------------|
+|-------|---------|------|-------|----------|-------------|-----------|------------------------|------------|------------|--------------------------------|
 7.0|2018.0|21246|2.26|0.65|722|0.96|01-07-2018|Readers of El Salvadoran Content|People reading news from El Salvadoran media sources.|11-06-2018 17:50|11-06-2018 17:50|
 8.0|2018.0|21246|2.13|0.59|765|0.26|01-08-2018|Readers of El Salvadoran Content|People reading news from El Salvadoran media sources.|11-06-2018 17:50|11-06-2018 17:50|
 9.0|2018.0|21246|2.06|0.61|774|0.77|01-09-2018|Readers of El Salvadoran Content|People reading news from El Salvadoran media sources.|11-06-2018 17:50|11-06-2018 17:50|
@@ -1404,6 +1404,7 @@ _month|_year|interest_id|composition|index_value|ranking|percentile_ranking|mont
 3.0|2019.0|21246|1.75|0.67|1123|1.14|01-03-2019|Readers of El Salvadoran Content|People reading news from El Salvadoran media sources.|11-06-2018 17:50|11-06-2018 17:50|
 4.0|2019.0|21246|1.58|0.63|1092|0.64|01-04-2019|Readers of El Salvadoran Content|People reading news from El Salvadoran media sources.|11-06-2018 17:50|11-06-2018 17:50|
 nan|nan|21246|1.61|0.68|1191|0.25|nan|Readers of El Salvadoran Content|People reading news from El Salvadoran media sources.|11-06-2018 17:50|11-06-2018 17:50|
+
 
 
 The results should come up to 10 rows only. 
