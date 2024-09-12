@@ -142,7 +142,7 @@ FULL OUTER JOIN fresh_segments.interest_metrics metrics
   ON metrics.interest_id = map.id;
 ```
 
-<kbd><img width="617" alt="image" src="https://user-images.githubusercontent.com/81607668/138908809-72bef6fa-825e-40e5-a326-43e9bc56f24d.png"></kbd>
+<kbd><img width="617" alt="image" src="![image](https://github.com/user-attachments/assets/25311075-b607-4b77-975c-fd4311194f3c)"></kbd>
 
 - There are 1,209 unique `id`s in `interest_map`.
 - There are 1,202 unique `interest_id`s in `interest_metrics`.
