@@ -100,7 +100,7 @@ SELECT
 FROM fresh_segments.interest_metrics
 ```
 
-<kbd><img width="112" alt="image" src="https://user-images.githubusercontent.com/81607668/138892507-5b89eba8-45c7-4edf-9c05-42347f47c746.png"></kbd>
+<kbd><img width="100" alt="image" src="https://user-images.githubusercontent.com/81607668/138892507-5b89eba8-45c7-4edf-9c05-42347f47c746.png"></kbd>
 
 The percentage of null values is 8.36% which is less than 10%, hence I would suggest to drop all the `null` values.
 
