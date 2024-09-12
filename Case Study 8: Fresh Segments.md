@@ -71,7 +71,6 @@ If you have any questions, reach out to me on [LinkedIn](https://www.linkedin.co
 ALTER TABLE fresh_segments.interest_metrics
 ALTER month_year TYPE DATE USING month_year::DATE;
 ```
-![image](https://github.com/user-attachments/assets/ecce0d9f-078f-4dc0-909d-f6b318435c29)
 
 <kbd><img width="970" alt="image" src="https://github.com/user-attachments/assets/ecce0d9f-078f-4dc0-909d-f6b318435c29"></kbd>
 
