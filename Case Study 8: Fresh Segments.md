@@ -239,7 +239,8 @@ INNER JOIN fresh_segments.interest_metrics metrics
 WHERE metrics.month_year < DATE_TRUNC('mon', map.created_at::DATE);
 ```
 
-<kbd><img width="110" alt="image" src="https://user-images.githubusercontent.com/81607668/139018367-ab5b5148-a2e1-4b53-968e-eedb7eb717a3.png"></kbd>
+
+<kbd><img width="110" alt="image" src="https://github.com/user-attachments/assets/4ad02f6e-a546-4e7b-8d56-e33aac15f797"></kbd>
 
 Seems like all the records' dates are in the same month, hence we will consider the records as valid. 
 
