@@ -321,7 +321,7 @@ FROM cte_interest_counts;
 
 <kbd><img width="446" alt="image" src="https://github.com/user-attachments/assets/833282dc-e29c-4efd-8ffd-5c5971f5d21b"></kbd>
 
-Interests with total months of 6 and above received a 90% and above percentage. Interests below this mark should be investigated to improve their clicks and customer interactions. 
+Interests with total months of 6 and below received a 90% and above percentage. Interests above this mark should be investigated to improve their clicks and customer interactions. 
 ***
 
 **3. If we were to remove all `interest_id` values which are lower than the `total_months` value we found in the previous question - how many total data points would we be removing?**
