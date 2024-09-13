@@ -224,7 +224,8 @@ There are 188 records where the `month_year` date is before the `created_at` dat
 
 However, it looks like these records are created in the same month as `month_year`. Do you remember that the `month_year` column's date is set to default on 1st day of the month? 
 
-<kbd><img width="761" alt="image" src="https://user-images.githubusercontent.com/81607668/139018053-f948b63a-d502-4337-b347-8c24f736f32f.png"></kbd>
+
+<kbd><img width="761" alt="image" src="https://github.com/user-attachments/assets/12cbf9c6-c872-44b1-b3e0-817a1cc70cae"></kbd>
 
 Running another test to see whether date in `month_year` and `created_at` are in the same month.
 
