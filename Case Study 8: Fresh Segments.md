@@ -218,7 +218,8 @@ INNER JOIN fresh_segments.interest_metrics metrics
 WHERE metrics.month_year < map.created_at::DATE;
 ```
 
-<kbd><img width="106" alt="image" src="https://user-images.githubusercontent.com/81607668/139017976-48aade91-969c-432f-83b3-a14436f66056.png"></kbd>
+
+<kbd><img width="106" alt="image" src="https://github.com/user-attachments/assets/ba3c2d68-33b5-45c5-91b2-538a53a1c05a"></kbd>
 
 There are 188 records where the `month_year` date is before the `created_at` date. 
 
