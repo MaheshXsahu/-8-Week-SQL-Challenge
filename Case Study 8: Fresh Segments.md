@@ -258,8 +258,8 @@ SELECT
   COUNT(DISTINCT interest_id) AS unique_interest_id_count
 FROM fresh_segments.interest_metrics;
 ```
+<kbd><img width="465" alt="image" src="https://github.com/user-attachments/assets/b19ed11d-ad97-4faf-bc70-3a51149289cf"></kbd>
 
-<img width="465" alt="image" src="https://github.com/user-attachments/assets/b19ed11d-ad97-4faf-bc70-3a51149289cf">
 
 There are 14 distinct `month_year` dates and 1202 distinct `interest_id`s.
 
@@ -283,7 +283,7 @@ GROUP BY c.total_months_present
 ;
 
 ```
-<img width="263" alt="image" src="https://github.com/user-attachments/assets/609144ef-8b53-48fa-8863-5220e7ad6226">
+<kbd><img width="465" alt="image" src="https://github.com/user-attachments/assets/609144ef-8b53-48fa-8863-5220e7ad6226"></kbd>
 
 480 interests out of 1202 interests are present in all the `month_year` dates.
 
