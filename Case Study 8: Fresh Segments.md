@@ -294,31 +294,32 @@ GROUP BY c.total_months_present
 Find out the point in which interests present in a particular number of months are not performing well. For example, interest id 101 only appeared in 6 months due to non or lack of clicks and interactions, so we can consider to cut the interest off. 
 
 ```sql
+
 WITH cte_interest_months AS (
 SELECT
   interest_id,
-  MAX(DISTINCT month_year) AS total_months
+  COUNT(DISTINCT month_year) AS total_months_present
 FROM fresh_segments.interest_metrics
 WHERE interest_id IS NOT NULL
 GROUP BY interest_id
 ),
 cte_interest_counts AS (
   SELECT
-    total_months,
+    total_months_present,
     COUNT(DISTINCT interest_id) AS interest_count
   FROM cte_interest_months
-  GROUP BY total_months
+  GROUP BY total_months_present
 )
 
 SELECT
-  total_months,
+  total_months_present,
   interest_count,
-  ROUND(100 * SUM(interest_count) OVER (ORDER BY total_months DESC) / -- Create running total field using cumulative values of interest count
+  ROUND(100 * SUM(interest_count) OVER (ORDER BY total_months_present DESC) / -- Create running total field using cumulative values of interest count
       (SUM(INTEREST_COUNT) OVER ()),2) AS cumulative_percentage
 FROM cte_interest_counts;
 ```
 
-<img width="446" alt="image" src="https://user-images.githubusercontent.com/81607668/139035737-cfe32a44-5c48-4376-a9bc-96c15daf162b.png">
+<kbd><img width="446" alt="image" src="https://github.com/user-attachments/assets/833282dc-e29c-4efd-8ffd-5c5971f5d21b"></kbd>
 
 Interests with total months of 6 and above received a 90% and above percentage. Interests below this mark should be investigated to improve their clicks and customer interactions. 
 ***
