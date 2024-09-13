@@ -250,7 +250,7 @@ Seems like all the records' dates are in the same month, hence we will consider 
   
 **1. Which interests have been present in all `month_year` dates in our dataset?**
 
-Find out how many unique `month_year` in dataset.
+Let's Find out how many unique `month_year` in dataset and the unique intrests are there 
 
 ```sql
 SELECT 
@@ -259,30 +259,31 @@ SELECT
 FROM fresh_segments.interest_metrics;
 ```
 
-<img width="465" alt="image" src="https://user-images.githubusercontent.com/81607668/139030151-64461d42-4215-4da1-bc6e-c701b9a8f357.png">
+<img width="465" alt="image" src="https://github.com/user-attachments/assets/b19ed11d-ad97-4faf-bc70-3a51149289cf">
 
 There are 14 distinct `month_year` dates and 1202 distinct `interest_id`s.
 
 ```sql
+
 WITH interest_cte AS (
 SELECT 
   interest_id, 
-  COUNT(DISTINCT month_year) AS total_months
+  COUNT(DISTINCT month_year) AS total_months_present
 FROM fresh_segments.interest_metrics
 WHERE month_year IS NOT NULL
 GROUP BY interest_id
 )
 
 SELECT 
-  c.total_months,
-  COUNT(DISTINCT c.interest_id)
+  c.total_months_present,
+  COUNT(DISTINCT c.interest_id) AS all_months_present_interest_ids
 FROM interest_cte c
-WHERE total_months = 14
-GROUP BY c.total_months
-ORDER BY count DESC;
-```
+WHERE total_months_present = 14
+GROUP BY c.total_months_present
+;
 
-<img width="263" alt="image" src="https://user-images.githubusercontent.com/81607668/139029765-3403fb8b-e93d-4fde-989b-b648d62fcb3f.png">
+```
+<img width="263" alt="image" src="https://github.com/user-attachments/assets/609144ef-8b53-48fa-8863-5220e7ad6226">
 
 480 interests out of 1202 interests are present in all the `month_year` dates.
 
