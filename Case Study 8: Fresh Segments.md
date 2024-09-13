@@ -170,7 +170,7 @@ GROUP BY m.id, m.interest_name
 ORDER BY total_associations DESC;
 ```
 Screen Shot :
-![image](https://github.com/user-attachments/assets/956dfe39-9971-4d8d-aa8a-61631401c4f9)
+<kbd>![image](https://github.com/user-attachments/assets/956dfe39-9971-4d8d-aa8a-61631401c4f9)</kbd>
 
 
 ***
