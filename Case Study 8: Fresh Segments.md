@@ -325,6 +325,31 @@ Interests with total months of 6 and below received a 90% and above percentage. 
 ***
 
 **3. If we were to remove all `interest_id` values which are lower than the `total_months` value we found in the previous question - how many total data points would we be removing?**
+```sql
+WITH month_count AS
+(		
+SELECT interest_id, COUNT(DISTINCT (month_year)) AS month_count
+FROM interest_metrics
+GROUP BY interest_id
+HAVING COUNT(DISTINCT month_year) < 6
+)
+		
+--getting the number of times the above interest ids are present in the interest_metrics table
+SELECT
+    COUNT(interest_id) AS interest_record_to_remove
+FROM
+    interest_metrics
+WHERE
+    interest_id IN (
+        SELECT
+            interest_id
+        FROM
+            month_count
+    );
+
+```
+<kbd>![image](https://github.com/user-attachments/assets/46e95dc2-37b4-4923-88da-9db8df5634fe)</kbd>
+
 
 ***
 
