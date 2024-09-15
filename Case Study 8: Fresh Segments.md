@@ -355,9 +355,55 @@ WHERE
 
 **4. Does this decision make sense to remove these data points from a business perspective? Use an example where there are all 14 months present to a removed interest example for your arguments - think about what it means to have less months present from a segment perspective. **
 
+```sql
+WITH month_counts AS (
+    SELECT
+        interest_id,
+        COUNT(DISTINCT month_year) AS month_count
+    FROM
+        interest_metrics
+    GROUP BY
+        interest_id
+    HAVING
+        COUNT(DISTINCT month_year) < 6
+)
 
+SELECT
+    removed.month_year,
+    present_interest,
+    removed_interest,
+    ROUND(removed_interest * 100.0 / (removed_interest + present_interest), 2) AS removed_prcnt
+FROM
+    (
+        SELECT
+            month_year,
+            COUNT(*) AS removed_interest
+        FROM
+            interest_metrics
+        WHERE
+            interest_id IN (SELECT interest_id FROM month_counts)
+        GROUP BY
+            month_year
+    ) AS removed
+JOIN
+    (
+        SELECT
+            month_year,
+            COUNT(*) AS present_interest
+        FROM
+            interest_metrics
+        WHERE
+            interest_id NOT IN (SELECT interest_id FROM month_counts)
+        GROUP BY
+            month_year
+    ) AS present
+ON
+    removed.month_year = present.month_year
+ORDER BY
+    removed.month_year;
+```
 <kbd>![image](https://github.com/user-attachments/assets/17e3726d-e86d-494a-9788-8ada9e07e585)</kbd>
-
+As removed percentage is not significant, we can removed the data points
 ***
 
 **5. If we include all of our interests regardless of their counts - how many unique interests are there for each month?**
