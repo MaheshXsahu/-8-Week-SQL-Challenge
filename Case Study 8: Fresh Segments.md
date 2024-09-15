@@ -355,6 +355,9 @@ WHERE
 
 **4. Does this decision make sense to remove these data points from a business perspective? Use an example where there are all 14 months present to a removed interest example for your arguments - think about what it means to have less months present from a segment perspective. **
 
+
+<kbd>![image](https://github.com/user-attachments/assets/17e3726d-e86d-494a-9788-8ada9e07e585)</kbd>
+
 ***
 
 **5. If we include all of our interests regardless of their counts - how many unique interests are there for each month?**
